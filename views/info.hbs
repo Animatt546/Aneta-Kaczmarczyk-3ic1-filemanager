@@ -1,0 +1,13 @@
+<main>
+    <div class="lewy">
+        <p id="pL">file info</p>
+    </div>
+    <div class="prawy">
+        {{#each konkretny}}
+        <div class="nazwaDanych">
+            <p class="niebieski">{{@key}}:</p>
+            <p class="danePliku">{{this}}</p>
+        </div>
+        {{/each}}
+    </div>
+</main>

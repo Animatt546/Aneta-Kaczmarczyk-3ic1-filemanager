@@ -1,0 +1,26 @@
+<main>
+    <div class="lewy">
+        <p id="pL">filemanager</p>
+        <a href="/usunDane" id="usunDane">usuń dane o plikach z tablicy</a>
+    </div>
+    <div class="prawy">
+        <table>
+            <tr>
+                <td>id</td>
+                <td>obraz</td>
+                <td>name</td>
+                <td>size</td>
+                <td>type</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            {{#each pliki}}
+            <tr>
+                {{> part}}
+            </tr>
+            {{/each}}
+        </table>
+
+    </div>
+</main>

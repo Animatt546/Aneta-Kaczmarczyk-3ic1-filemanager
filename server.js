@@ -64,6 +64,9 @@ app.post('/handleUpload', function (req, res) {
 app.get("/filemanager", function (req, res) {
     res.render('filemanager.hbs', context)
 })
+app.get("/", function (req, res) {
+    res.redirect("/upload")
+})
 app.get("/delete", function (req, res) {
     for (let j = 0; j < context.pliki.length; j++) {
         if (context.pliki[j].id == req.query.id) {
